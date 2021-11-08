@@ -8,6 +8,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 import tr.com.hkerembagci.routebetweencountries.entity.Root;
 import tr.com.hkerembagci.routebetweencountries.exception.CountryNotFoundException;
+import tr.com.hkerembagci.routebetweencountries.model.Node;
 
 import java.io.IOException;
 import java.util.*;
@@ -18,14 +19,15 @@ public class RestClient {
 
     //    If you can access the json file over Internet, you can use as below.
     //    private static final String URL_COUNTRIES_JSON = "https://raw.githubusercontent.com/mledoze/countries/master/countries.json";
-    private static final String URL_COUNTRIES_JSON = "D:\\HKB\\route-between-countries-master\\countries.json";
     @Value("classpath:countries.json")
     private Resource resourceFile;
     private static List<Root> countryList;
     private static int minimumRoute = 0;
     private static Root sourceCountry;
+    private static Root nextCountry;
     private static Root destinationCountry;
     private static List<String> bestRouteList;
+    private static Set<String> tracedCountryList;
 
     public void getCountryList() throws IOException {
         /*
@@ -52,6 +54,7 @@ public class RestClient {
         if (null == destinationCountry) {
             throw new CountryNotFoundException("Destination country cannot found: " + destination);
         }
+        tracedCountryList = new HashSet<>();
         List<String> result = findBestRoute();
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode rootNode = mapper.createObjectNode();
@@ -69,37 +72,66 @@ public class RestClient {
     }
 
     private List<String> findBestRoute() {
-        bestRouteList = new ArrayList<>();
-        Set<Map<String, List<String>>> routeSet = new HashSet<>();
-        createRouteList(sourceCountry, routeSet);
-        return bestRouteList;
-    }
-
-    private void createRouteList(Root source, Set<Map<String, List<String>>> routeSet) {
-        bestRouteList.add(source.getCca3());
-        routeSet.add(getNodeList(source));
-        for (Map<String, List<String>> set : routeSet) {
-            for (Map.Entry<String, List<String>> entry : set.entrySet()) {
-                if (entry.getValue().contains(destinationCountry.getCca3())) {
-                    bestRouteList.add(destinationCountry.getCca3());
-                    return;
-                }
-                for (String borderCountry : entry.getValue()) {
-                    if (!bestRouteList.contains(borderCountry)) {
-                        bestRouteList.add(source.getCca3());
+        List<Node> nodeList = new ArrayList<>();
+        Node node = new Node();
+        node.setRoot(sourceCountry);
+        node.setBorders(sourceCountry.getBorders());
+        node.setRouteNumber(new ArrayList<>(1));
+        nodeList.add(node);
+        Root source = sourceCountry;
+        int i = 1;
+        int k = 1;
+        boolean found = false;
+        while (!source.getBorders().contains(destinationCountry.getCca3())) {
+            tracedCountryList.add(source.getCca3());
+            for (int j = 1; j <= source.getBorders().size(); j++) {
+                if (!tracedCountryList.contains(source.getBorders().get(j - 1))) {
+                    node = new Node();
+                    node.setRoot(getCountryByCca3(source.getBorders().get(j - 1)));
+                    node.setBorders(node.getRoot().getBorders());
+                    node.setRouteNumber(Arrays.asList(i, j));
+                    nodeList.add(node);
+                    if (node.getRoot().getBorders().contains(destinationCountry.getCca3())) {
+                        found = true;
+                        break;
                     }
-                    Root tempSource = getCountryByCca3(borderCountry);
-                    createRouteList(tempSource, routeSet);
-                    return;
+                }
+            }
+            if (found) {
+                break;
+            }
+            i++;
+            for (; k <= source.getBorders().size(); k++) {
+                if (!tracedCountryList.contains(source.getBorders().get(k - 1))) {
+                    source = getCountryByCca3(source.getBorders().get(k - 1));
+                }
+                break;
+            }
+            if (i > sourceCountry.getBorders().size()) {
+                break;
+            }
+        }
+        List<String> resultList = new ArrayList<>();
+        resultList.add(destinationCountry.getCca3());
+        reverseRoute(nodeList.get(nodeList.size() - 1).getRoot(), resultList);
+        int z = 1;
+        for (int r = 0; r < nodeList.size() - 1; r++) {
+            if (nodeList.get(r).getBorders().contains(resultList.get(z))) {
+                z++;
+                reverseRoute(nodeList.get(r).getRoot(), resultList);
+                if (r == 0) {
+                    break;
+                } else {
+                    r = r-2;
                 }
             }
         }
+        Collections.reverse(resultList);
+        return resultList;
     }
 
-    private Map<String, List<String>> getNodeList(Root source) {
-        Map<String, List<String>> tempMap = new HashMap<>();
-        tempMap.put(source.getCca3(), source.getBorders());
-        return tempMap;
+    private void reverseRoute(Root lastNode, List<String> resultList) {
+        resultList.add(lastNode.getCca3());
     }
 
     public Root getCountryByCca3(String country) {
@@ -110,4 +142,5 @@ public class RestClient {
         }
         return null;
     }
+
 }
