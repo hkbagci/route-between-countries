@@ -9,6 +9,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import tr.com.hkerembagci.routebetweencountries.entity.Root;
 import tr.com.hkerembagci.routebetweencountries.exception.CountryNotFoundException;
+import tr.com.hkerembagci.routebetweencountries.model.Graph;
+import tr.com.hkerembagci.routebetweencountries.model.Node;
 
 import java.util.*;
 
@@ -18,21 +20,9 @@ public class RestClient {
 
     private static final String URL_COUNTRIES_JSON = "https://raw.githubusercontent.com/mledoze/countries/master/countries.json";
     private static List<Root> countryList;
-    private static int routeCountryCount = 0;
-
-    public static void main(String[] args) throws JsonProcessingException {
-        RestTemplate restTemplate = new RestTemplate();
-        ObjectMapper objectMapper = new ObjectMapper();
-        String result = restTemplate.getForObject(URL_COUNTRIES_JSON, String.class);
-        List<Root> countryList = objectMapper.readValue(result, new TypeReference<List<Root>>() {
-        });
-        for (Root country : countryList) {
-            System.out.print(country.getName().getCommon()
-                    + " - " + country.getCca3() + ", Borders: ");
-            country.getBorders().forEach(c -> System.out.print(c + " "));
-            System.out.println();
-        }
-    }
+    private static int minimumRoute = 0;
+    private static Root sourceCountry;
+    private static Root destinationCountry;
 
     public void getCountryList() throws JsonProcessingException {
         RestTemplate restTemplate = new RestTemplate();
@@ -46,11 +36,15 @@ public class RestClient {
         if (null == countryList) {
             getCountryList();
         }
-        Root sourceCountry = getCountryByCca3(source, countryList);
+        sourceCountry = getCountryByCca3(source, countryList);
         if (null == sourceCountry) {
             throw new CountryNotFoundException("Source country cannot found: " + source);
         }
-        List<String> result = findBestRoute(sourceCountry, destination);
+        destinationCountry = getCountryByCca3(destination, countryList);
+        if (null == destinationCountry) {
+            throw new CountryNotFoundException("Destination country cannot found: " + destination);
+        }
+        List<String> result = findBestRoute();
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode rootNode = mapper.createObjectNode();
 
@@ -66,28 +60,36 @@ public class RestClient {
         return jsonString;
     }
 
-    private List<String> findBestRoute(Root source, String destination) {
-        List<List<String>> routeLists = new ArrayList<>();
-        List<String> tempRouteList = createRouteList(source, destination, new ArrayList<>());
-        routeLists.add(tempRouteList);
-        int minimum = 0;
+    private List<String> findBestRoute() {
         List<String> bestRoute = new ArrayList<>();
-        for (List<String> routeList : routeLists) {
-            if (minimum == 0 || routeList.size() < minimum) {
-                minimum = routeList.size();
-                bestRoute = routeList;
+        for (String border : sourceCountry.getBorders()) {
+            List<String> tempRouteList = createRouteList(sourceCountry, destinationCountry.getCca3(), new ArrayList<>());
+            if (null != tempRouteList) {
+                minimumRoute = tempRouteList.size();
+                bestRoute = tempRouteList;
             }
         }
         return bestRoute;
     }
 
     private List<String> createRouteList(Root source, String destination, List<String> routeMapList) {
-        routeMapList.add(source.getCca3());
         if (null != source.getBorders()) {
             for (String border : source.getBorders()) {
-                routeMapList.add(border);
-                if (border.equals(destination)) {
+                if (routeMapList.isEmpty()) {
+                    routeMapList.add(sourceCountry.getCca3());
+                } else {
+                    if (routeMapList.contains(border)) {
+                        continue;
+                    } else {
+                        routeMapList.add(border);
+                    }
+                }
+                if (source.getBorders().contains(destinationCountry.getCca3())) {
+                    routeMapList.add(destinationCountry.getCca3());
                     return routeMapList;
+                }
+                if (minimumRoute != 0 && minimumRoute < routeMapList.size()) {
+                    return null;
                 }
                 createRouteList(getCountryByCca3(border, countryList), destination, routeMapList);
             }
