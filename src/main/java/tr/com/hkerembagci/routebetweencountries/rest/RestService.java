@@ -1,5 +1,7 @@
 package tr.com.hkerembagci.routebetweencountries.rest;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import tr.com.hkerembagci.routebetweencountries.exception.CountryNotFoundException;
@@ -10,6 +12,8 @@ import java.io.IOException;
 @RequestMapping(path = "/routing")
 public class RestService {
 
+    private Logger logger = LoggerFactory.getLogger(RestService.class);
+
     private final RestClient restClient;
 
     public RestService(RestClient restClient) {
@@ -18,8 +22,18 @@ public class RestService {
 
     @GetMapping(value = "/{source}/{destination}", produces = "application/json")
     @ResponseBody
-    public ResponseEntity<String> findRouteBetweenCountries(@PathVariable String source, @PathVariable String destination) throws CountryNotFoundException, IOException {
-        return ResponseEntity.ok(restClient.findRouteByCountries(source, destination));
+    public ResponseEntity<String> findRouteBetweenCountries(@PathVariable String source, @PathVariable String destination) throws IOException {
+        try {
+            String result = restClient.findRouteByCountries(source, destination);
+            if (null != result) {
+                return ResponseEntity.ok(result);
+            } else {
+                return ResponseEntity.badRequest().body(null);
+            }
+        } catch (CountryNotFoundException e) {
+            logger.error(e.getMessage());
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
     }
 
 }

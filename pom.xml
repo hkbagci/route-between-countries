@@ -10,7 +10,7 @@
     </parent>
     <groupId>tr.com.hkerembagci</groupId>
     <artifactId>route-between-countries</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>route-between-countries</name>
     <description>route-between-countries</description>
     <properties>
