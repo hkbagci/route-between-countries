@@ -14,5 +14,6 @@ For developers:
 For users:
 - Download the jar file (route-between-countries-1.X.X-SNAPSHOT.jar) in the project.
 - Check JRE 8 installed in your device, if not install it.
+- Make sure 8080 port isn't using by another application.
 - Open command line and run "java -jar route-between-countries-1.X.X-SNAPSHOT.jar" without quotes.
 - Write http://localhost:8080/routing/{source}/{destination} in your browser and run it (you can use BRA as source and CAN as destination for testing).
