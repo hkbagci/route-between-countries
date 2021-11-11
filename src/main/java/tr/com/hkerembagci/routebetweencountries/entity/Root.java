@@ -9,5859 +9,9619 @@ import java.util.List;
 /* ObjectMapper om = new ObjectMapper();
 Root root = om.readValue(myJsonString), Root.class); */
 
-public class Root{
+public class Root {
     @JsonProperty("name")
     public Name getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(Name name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     Name name;
+
     @JsonProperty("tld")
     public List<String> getTld() {
-        return this.tld; }
+        return this.tld;
+    }
+
     public void setTld(List<String> tld) {
-        this.tld = tld; }
+        this.tld = tld;
+    }
+
     List<String> tld;
+
     @JsonProperty("cca2")
     public String getCca2() {
-        return this.cca2; }
+        return this.cca2;
+    }
+
     public void setCca2(String cca2) {
-        this.cca2 = cca2; }
+        this.cca2 = cca2;
+    }
+
     String cca2;
+
     @JsonProperty("ccn3")
     public String getCcn3() {
-        return this.ccn3; }
+        return this.ccn3;
+    }
+
     public void setCcn3(String ccn3) {
-        this.ccn3 = ccn3; }
+        this.ccn3 = ccn3;
+    }
+
     String ccn3;
+
     @JsonProperty("cca3")
     public String getCca3() {
-        return this.cca3; }
+        return this.cca3;
+    }
+
     public void setCca3(String cca3) {
-        this.cca3 = cca3; }
+        this.cca3 = cca3;
+    }
+
     String cca3;
+
     @JsonProperty("cioc")
     public String getCioc() {
-        return this.cioc; }
+        return this.cioc;
+    }
+
     public void setCioc(String cioc) {
-        this.cioc = cioc; }
+        this.cioc = cioc;
+    }
+
     String cioc;
+
     @JsonProperty("independent")
     public boolean getIndependent() {
-        return this.independent; }
+        return this.independent;
+    }
+
     public void setIndependent(boolean independent) {
-        this.independent = independent; }
+        this.independent = independent;
+    }
+
     boolean independent;
+
     @JsonProperty("status")
     public String getStatus() {
-        return this.status; }
+        return this.status;
+    }
+
     public void setStatus(String status) {
-        this.status = status; }
+        this.status = status;
+    }
+
     String status;
+
     @JsonProperty("unMember")
     public boolean getUnMember() {
-        return this.unMember; }
+        return this.unMember;
+    }
+
     public void setUnMember(boolean unMember) {
-        this.unMember = unMember; }
+        this.unMember = unMember;
+    }
+
     boolean unMember;
+
     @JsonProperty("currencies")
     public Currencies getCurrencies() {
-        return this.currencies; }
+        return this.currencies;
+    }
+
     public void setCurrencies(Currencies currencies) {
-        this.currencies = currencies; }
+        this.currencies = currencies;
+    }
+
     Currencies currencies;
+
     @JsonProperty("idd")
     public Idd getIdd() {
-        return this.idd; }
+        return this.idd;
+    }
+
     public void setIdd(Idd idd) {
-        this.idd = idd; }
+        this.idd = idd;
+    }
+
     Idd idd;
+
     @JsonProperty("capital")
     public List<String> getCapital() {
-        return this.capital; }
+        return this.capital;
+    }
+
     public void setCapital(List<String> capital) {
-        this.capital = capital; }
+        this.capital = capital;
+    }
+
     List<String> capital;
+
     @JsonProperty("altSpellings")
     public List<String> getAltSpellings() {
-        return this.altSpellings; }
+        return this.altSpellings;
+    }
+
     public void setAltSpellings(List<String> altSpellings) {
-        this.altSpellings = altSpellings; }
+        this.altSpellings = altSpellings;
+    }
+
     List<String> altSpellings;
+
     @JsonProperty("region")
     public String getRegion() {
-        return this.region; }
+        return this.region;
+    }
+
     public void setRegion(String region) {
-        this.region = region; }
+        this.region = region;
+    }
+
     String region;
+
     @JsonProperty("subregion")
     public String getSubregion() {
-        return this.subregion; }
+        return this.subregion;
+    }
+
     public void setSubregion(String subregion) {
-        this.subregion = subregion; }
+        this.subregion = subregion;
+    }
+
     String subregion;
+
     @JsonProperty("languages")
     public Languages getLanguages() {
-        return this.languages; }
+        return this.languages;
+    }
+
     public void setLanguages(Languages languages) {
-        this.languages = languages; }
+        this.languages = languages;
+    }
+
     Languages languages;
+
     @JsonProperty("translations")
     public Translations getTranslations() {
-        return this.translations; }
+        return this.translations;
+    }
+
     public void setTranslations(Translations translations) {
-        this.translations = translations; }
+        this.translations = translations;
+    }
+
     Translations translations;
+
     @JsonProperty("latlng")
     public List<Double> getLatlng() {
-        return this.latlng; }
+        return this.latlng;
+    }
+
     public void setLatlng(List<Double> latlng) {
-        this.latlng = latlng; }
+        this.latlng = latlng;
+    }
+
     List<Double> latlng;
+
     @JsonProperty("landlocked")
     public boolean getLandlocked() {
-        return this.landlocked; }
+        return this.landlocked;
+    }
+
     public void setLandlocked(boolean landlocked) {
-        this.landlocked = landlocked; }
+        this.landlocked = landlocked;
+    }
+
     boolean landlocked;
+
     @JsonProperty("borders")
     public List<String> getBorders() {
-        return this.borders; }
+        return this.borders;
+    }
+
     public void setBorders(List<String> borders) {
-        this.borders = borders; }
+        this.borders = borders;
+    }
+
     List<String> borders;
+
     @JsonProperty("area")
     public double getArea() {
-        return this.area; }
+        return this.area;
+    }
+
     public void setArea(double area) {
-        this.area = area; }
+        this.area = area;
+    }
+
     double area;
+
     @JsonProperty("flag")
     public String getFlag() {
-        return this.flag; }
+        return this.flag;
+    }
+
     public void setFlag(String flag) {
-        this.flag = flag; }
+        this.flag = flag;
+    }
+
     String flag;
+
     @JsonProperty("demonyms")
     public Demonyms getDemonyms() {
-        return this.demonyms; }
+        return this.demonyms;
+    }
+
     public void setDemonyms(Demonyms demonyms) {
-        this.demonyms = demonyms; }
+        this.demonyms = demonyms;
+    }
+
     Demonyms demonyms;
 }
 
-class Nld{
+class Nld {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Pap{
+class Pap {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Prs{
+class Prs {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Pus{
+class Pus {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Tuk{
+class Tuk {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Por{
+class Por {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Eng{
+class Eng {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
+
     @JsonProperty("f")
     public String getF() {
-        return this.f; }
+        return this.f;
+    }
+
     public void setF(String f) {
-        this.f = f; }
+        this.f = f;
+    }
+
     String f;
+
     @JsonProperty("m")
     public String getM() {
-        return this.m; }
+        return this.m;
+    }
+
     public void setM(String m) {
-        this.m = m; }
+        this.m = m;
+    }
+
     String m;
 }
 
-class Swe{
+class Swe {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Sqi{
+class Sqi {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Cat{
+class Cat {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ara{
+class Ara {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Grn{
+class Grn {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Spa{
+class Spa {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Hye{
+class Hye {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Smo{
+class Smo {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Fra{
+class Fra {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
+
     @JsonProperty("f")
     public String getF() {
-        return this.f; }
+        return this.f;
+    }
+
     public void setF(String f) {
-        this.f = f; }
+        this.f = f;
+    }
+
     String f;
+
     @JsonProperty("m")
     public String getM() {
-        return this.m; }
+        return this.m;
+    }
+
     public void setM(String m) {
-        this.m = m; }
+        this.m = m;
+    }
+
     String m;
 }
 
-class Bar{
+class Bar {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Aze{
+class Aze {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Rus{
+class Rus {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Run{
+class Run {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Deu{
+class Deu {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ben{
+class Ben {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Bul{
+class Bul {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Bos{
+class Bos {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Hrv{
+class Hrv {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Srp{
+class Srp {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Bel{
+class Bel {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Bjz{
+class Bjz {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Aym{
+class Aym {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Que{
+class Que {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Msa{
+class Msa {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Dzo{
+class Dzo {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Nor{
+class Nor {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Tsn{
+class Tsn {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Sag{
+class Sag {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Gsw{
+class Gsw {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ita{
+class Ita {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Roh{
+class Roh {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Zho{
+class Zho {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Kon{
+class Kon {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Lin{
+class Lin {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Lua{
+class Lua {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Swa{
+class Swa {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Rar{
+class Rar {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Zdj{
+class Zdj {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ell{
+class Ell {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Tur{
+class Tur {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ces{
+class Ces {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Slk{
+class Slk {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Dan{
+class Dan {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Tir{
+class Tir {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ber{
+class Ber {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Mey{
+class Mey {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Est{
+class Est {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Amh{
+class Amh {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Fin{
+class Fin {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Fij{
+class Fij {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Hif{
+class Hif {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Fao{
+class Fao {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Kat{
+class Kat {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Nfr{
+class Nfr {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Pov{
+class Pov {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Kal{
+class Kal {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Cha{
+class Cha {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Hat{
+class Hat {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Hun{
+class Hun {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ind{
+class Ind {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Glv{
+class Glv {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Hin{
+class Hin {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Tam{
+class Tam {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Gle{
+class Gle {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Fas{
+class Fas {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Arc{
+class Arc {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ckb{
+class Ckb {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Isl{
+class Isl {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Heb{
+class Heb {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Jam{
+class Jam {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Nrf{
+class Nrf {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Jpn{
+class Jpn {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Kaz{
+class Kaz {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Kir{
+class Kir {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Khm{
+class Khm {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Gil{
+class Gil {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Kor{
+class Kor {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Lao{
+class Lao {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Sin{
+class Sin {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Sot{
+class Sot {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Lit{
+class Lit {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ltz{
+class Ltz {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Lav{
+class Lav {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ron{
+class Ron {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Mlg{
+class Mlg {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Div{
+class Div {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Mah{
+class Mah {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Mkd{
+class Mkd {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Mlt{
+class Mlt {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Mya{
+class Mya {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Cnr{
+class Cnr {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Mon{
+class Mon {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Cal{
+class Cal {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Mfe{
+class Mfe {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Nya{
+class Nya {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Afr{
+class Afr {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Her{
+class Her {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Hgm{
+class Hgm {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Kwn{
+class Kwn {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Loz{
+class Loz {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ndo{
+class Ndo {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Pih{
+class Pih {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Niu{
+class Niu {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Nno{
+class Nno {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Nob{
+class Nob {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Smi{
+class Smi {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Nep{
+class Nep {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Nau{
+class Nau {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Mri{
+class Mri {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Nzs{
+class Nzs {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Urd{
+class Urd {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Fil{
+class Fil {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Pau{
+class Pau {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Hmo{
+class Hmo {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Tpi{
+class Tpi {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Pol{
+class Pol {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Kin{
+class Kin {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Som{
+class Som {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Slv{
+class Slv {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ssw{
+class Ssw {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Crs{
+class Crs {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Tha{
+class Tha {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Tgk{
+class Tgk {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Tkl{
+class Tkl {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Tet{
+class Tet {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ton{
+class Ton {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Tvl{
+class Tvl {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ukr{
+class Ukr {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Uzb{
+class Uzb {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Lat{
+class Lat {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Vie{
+class Vie {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Bis{
+class Bis {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Nbl{
+class Nbl {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Nso{
+class Nso {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Tso{
+class Tso {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ven{
+class Ven {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Xho{
+class Xho {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Zul{
+class Zul {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Bwg{
+class Bwg {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Kck{
+class Kck {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Khi{
+class Khi {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Ndc{
+class Ndc {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Nde{
+class Nde {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Sna{
+class Sna {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Toi{
+class Toi {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Zib{
+class Zib {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Native{
+class Native {
     @JsonProperty("nld")
     public Nld getNld() {
-        return this.nld; }
+        return this.nld;
+    }
+
     public void setNld(Nld nld) {
-        this.nld = nld; }
+        this.nld = nld;
+    }
+
     Nld nld;
+
     @JsonProperty("pap")
     public Pap getPap() {
-        return this.pap; }
+        return this.pap;
+    }
+
     public void setPap(Pap pap) {
-        this.pap = pap; }
+        this.pap = pap;
+    }
+
     Pap pap;
+
     @JsonProperty("prs")
     public Prs getPrs() {
-        return this.prs; }
+        return this.prs;
+    }
+
     public void setPrs(Prs prs) {
-        this.prs = prs; }
+        this.prs = prs;
+    }
+
     Prs prs;
+
     @JsonProperty("pus")
     public Pus getPus() {
-        return this.pus; }
+        return this.pus;
+    }
+
     public void setPus(Pus pus) {
-        this.pus = pus; }
+        this.pus = pus;
+    }
+
     Pus pus;
+
     @JsonProperty("tuk")
     public Tuk getTuk() {
-        return this.tuk; }
+        return this.tuk;
+    }
+
     public void setTuk(Tuk tuk) {
-        this.tuk = tuk; }
+        this.tuk = tuk;
+    }
+
     Tuk tuk;
+
     @JsonProperty("por")
     public Por getPor() {
-        return this.por; }
+        return this.por;
+    }
+
     public void setPor(Por por) {
-        this.por = por; }
+        this.por = por;
+    }
+
     Por por;
+
     @JsonProperty("eng")
     public Eng getEng() {
-        return this.eng; }
+        return this.eng;
+    }
+
     public void setEng(Eng eng) {
-        this.eng = eng; }
+        this.eng = eng;
+    }
+
     Eng eng;
+
     @JsonProperty("swe")
     public Swe getSwe() {
-        return this.swe; }
+        return this.swe;
+    }
+
     public void setSwe(Swe swe) {
-        this.swe = swe; }
+        this.swe = swe;
+    }
+
     Swe swe;
+
     @JsonProperty("sqi")
     public Sqi getSqi() {
-        return this.sqi; }
+        return this.sqi;
+    }
+
     public void setSqi(Sqi sqi) {
-        this.sqi = sqi; }
+        this.sqi = sqi;
+    }
+
     Sqi sqi;
+
     @JsonProperty("cat")
     public Cat getCat() {
-        return this.cat; }
+        return this.cat;
+    }
+
     public void setCat(Cat cat) {
-        this.cat = cat; }
+        this.cat = cat;
+    }
+
     Cat cat;
+
     @JsonProperty("ara")
     public Ara getAra() {
-        return this.ara; }
+        return this.ara;
+    }
+
     public void setAra(Ara ara) {
-        this.ara = ara; }
+        this.ara = ara;
+    }
+
     Ara ara;
+
     @JsonProperty("grn")
     public Grn getGrn() {
-        return this.grn; }
+        return this.grn;
+    }
+
     public void setGrn(Grn grn) {
-        this.grn = grn; }
+        this.grn = grn;
+    }
+
     Grn grn;
+
     @JsonProperty("spa")
     public Spa getSpa() {
-        return this.spa; }
+        return this.spa;
+    }
+
     public void setSpa(Spa spa) {
-        this.spa = spa; }
+        this.spa = spa;
+    }
+
     Spa spa;
+
     @JsonProperty("hye")
     public Hye getHye() {
-        return this.hye; }
+        return this.hye;
+    }
+
     public void setHye(Hye hye) {
-        this.hye = hye; }
+        this.hye = hye;
+    }
+
     Hye hye;
+
     @JsonProperty("smo")
     public Smo getSmo() {
-        return this.smo; }
+        return this.smo;
+    }
+
     public void setSmo(Smo smo) {
-        this.smo = smo; }
+        this.smo = smo;
+    }
+
     Smo smo;
+
     @JsonProperty("fra")
     public Fra getFra() {
-        return this.fra; }
+        return this.fra;
+    }
+
     public void setFra(Fra fra) {
-        this.fra = fra; }
+        this.fra = fra;
+    }
+
     Fra fra;
+
     @JsonProperty("bar")
     public Bar getBar() {
-        return this.bar; }
+        return this.bar;
+    }
+
     public void setBar(Bar bar) {
-        this.bar = bar; }
+        this.bar = bar;
+    }
+
     Bar bar;
+
     @JsonProperty("aze")
     public Aze getAze() {
-        return this.aze; }
+        return this.aze;
+    }
+
     public void setAze(Aze aze) {
-        this.aze = aze; }
+        this.aze = aze;
+    }
+
     Aze aze;
+
     @JsonProperty("rus")
     public Rus getRus() {
-        return this.rus; }
+        return this.rus;
+    }
+
     public void setRus(Rus rus) {
-        this.rus = rus; }
+        this.rus = rus;
+    }
+
     Rus rus;
+
     @JsonProperty("run")
     public Run getRun() {
-        return this.run; }
+        return this.run;
+    }
+
     public void setRun(Run run) {
-        this.run = run; }
+        this.run = run;
+    }
+
     Run run;
+
     @JsonProperty("deu")
     public Deu getDeu() {
-        return this.deu; }
+        return this.deu;
+    }
+
     public void setDeu(Deu deu) {
-        this.deu = deu; }
+        this.deu = deu;
+    }
+
     Deu deu;
+
     @JsonProperty("ben")
     public Ben getBen() {
-        return this.ben; }
+        return this.ben;
+    }
+
     public void setBen(Ben ben) {
-        this.ben = ben; }
+        this.ben = ben;
+    }
+
     Ben ben;
+
     @JsonProperty("bul")
     public Bul getBul() {
-        return this.bul; }
+        return this.bul;
+    }
+
     public void setBul(Bul bul) {
-        this.bul = bul; }
+        this.bul = bul;
+    }
+
     Bul bul;
+
     @JsonProperty("bos")
     public Bos getBos() {
-        return this.bos; }
+        return this.bos;
+    }
+
     public void setBos(Bos bos) {
-        this.bos = bos; }
+        this.bos = bos;
+    }
+
     Bos bos;
+
     @JsonProperty("hrv")
     public Hrv getHrv() {
-        return this.hrv; }
+        return this.hrv;
+    }
+
     public void setHrv(Hrv hrv) {
-        this.hrv = hrv; }
+        this.hrv = hrv;
+    }
+
     Hrv hrv;
+
     @JsonProperty("srp")
     public Srp getSrp() {
-        return this.srp; }
+        return this.srp;
+    }
+
     public void setSrp(Srp srp) {
-        this.srp = srp; }
+        this.srp = srp;
+    }
+
     Srp srp;
+
     @JsonProperty("bel")
     public Bel getBel() {
-        return this.bel; }
+        return this.bel;
+    }
+
     public void setBel(Bel bel) {
-        this.bel = bel; }
+        this.bel = bel;
+    }
+
     Bel bel;
+
     @JsonProperty("bjz")
     public Bjz getBjz() {
-        return this.bjz; }
+        return this.bjz;
+    }
+
     public void setBjz(Bjz bjz) {
-        this.bjz = bjz; }
+        this.bjz = bjz;
+    }
+
     Bjz bjz;
+
     @JsonProperty("aym")
     public Aym getAym() {
-        return this.aym; }
+        return this.aym;
+    }
+
     public void setAym(Aym aym) {
-        this.aym = aym; }
+        this.aym = aym;
+    }
+
     Aym aym;
+
     @JsonProperty("que")
     public Que getQue() {
-        return this.que; }
+        return this.que;
+    }
+
     public void setQue(Que que) {
-        this.que = que; }
+        this.que = que;
+    }
+
     Que que;
+
     @JsonProperty("msa")
     public Msa getMsa() {
-        return this.msa; }
+        return this.msa;
+    }
+
     public void setMsa(Msa msa) {
-        this.msa = msa; }
+        this.msa = msa;
+    }
+
     Msa msa;
+
     @JsonProperty("dzo")
     public Dzo getDzo() {
-        return this.dzo; }
+        return this.dzo;
+    }
+
     public void setDzo(Dzo dzo) {
-        this.dzo = dzo; }
+        this.dzo = dzo;
+    }
+
     Dzo dzo;
+
     @JsonProperty("nor")
     public Nor getNor() {
-        return this.nor; }
+        return this.nor;
+    }
+
     public void setNor(Nor nor) {
-        this.nor = nor; }
+        this.nor = nor;
+    }
+
     Nor nor;
+
     @JsonProperty("tsn")
     public Tsn getTsn() {
-        return this.tsn; }
+        return this.tsn;
+    }
+
     public void setTsn(Tsn tsn) {
-        this.tsn = tsn; }
+        this.tsn = tsn;
+    }
+
     Tsn tsn;
+
     @JsonProperty("sag")
     public Sag getSag() {
-        return this.sag; }
+        return this.sag;
+    }
+
     public void setSag(Sag sag) {
-        this.sag = sag; }
+        this.sag = sag;
+    }
+
     Sag sag;
+
     @JsonProperty("gsw")
     public Gsw getGsw() {
-        return this.gsw; }
+        return this.gsw;
+    }
+
     public void setGsw(Gsw gsw) {
-        this.gsw = gsw; }
+        this.gsw = gsw;
+    }
+
     Gsw gsw;
+
     @JsonProperty("ita")
     public Ita getIta() {
-        return this.ita; }
+        return this.ita;
+    }
+
     public void setIta(Ita ita) {
-        this.ita = ita; }
+        this.ita = ita;
+    }
+
     Ita ita;
+
     @JsonProperty("roh")
     public Roh getRoh() {
-        return this.roh; }
+        return this.roh;
+    }
+
     public void setRoh(Roh roh) {
-        this.roh = roh; }
+        this.roh = roh;
+    }
+
     Roh roh;
+
     @JsonProperty("zho")
     public Zho getZho() {
-        return this.zho; }
+        return this.zho;
+    }
+
     public void setZho(Zho zho) {
-        this.zho = zho; }
+        this.zho = zho;
+    }
+
     Zho zho;
+
     @JsonProperty("kon")
     public Kon getKon() {
-        return this.kon; }
+        return this.kon;
+    }
+
     public void setKon(Kon kon) {
-        this.kon = kon; }
+        this.kon = kon;
+    }
+
     Kon kon;
+
     @JsonProperty("lin")
     public Lin getLin() {
-        return this.lin; }
+        return this.lin;
+    }
+
     public void setLin(Lin lin) {
-        this.lin = lin; }
+        this.lin = lin;
+    }
+
     Lin lin;
+
     @JsonProperty("lua")
     public Lua getLua() {
-        return this.lua; }
+        return this.lua;
+    }
+
     public void setLua(Lua lua) {
-        this.lua = lua; }
+        this.lua = lua;
+    }
+
     Lua lua;
+
     @JsonProperty("swa")
     public Swa getSwa() {
-        return this.swa; }
+        return this.swa;
+    }
+
     public void setSwa(Swa swa) {
-        this.swa = swa; }
+        this.swa = swa;
+    }
+
     Swa swa;
+
     @JsonProperty("rar")
     public Rar getRar() {
-        return this.rar; }
+        return this.rar;
+    }
+
     public void setRar(Rar rar) {
-        this.rar = rar; }
+        this.rar = rar;
+    }
+
     Rar rar;
+
     @JsonProperty("zdj")
     public Zdj getZdj() {
-        return this.zdj; }
+        return this.zdj;
+    }
+
     public void setZdj(Zdj zdj) {
-        this.zdj = zdj; }
+        this.zdj = zdj;
+    }
+
     Zdj zdj;
+
     @JsonProperty("ell")
     public Ell getEll() {
-        return this.ell; }
+        return this.ell;
+    }
+
     public void setEll(Ell ell) {
-        this.ell = ell; }
+        this.ell = ell;
+    }
+
     Ell ell;
+
     @JsonProperty("tur")
     public Tur getTur() {
-        return this.tur; }
+        return this.tur;
+    }
+
     public void setTur(Tur tur) {
-        this.tur = tur; }
+        this.tur = tur;
+    }
+
     Tur tur;
+
     @JsonProperty("ces")
     public Ces getCes() {
-        return this.ces; }
+        return this.ces;
+    }
+
     public void setCes(Ces ces) {
-        this.ces = ces; }
+        this.ces = ces;
+    }
+
     Ces ces;
+
     @JsonProperty("slk")
     public Slk getSlk() {
-        return this.slk; }
+        return this.slk;
+    }
+
     public void setSlk(Slk slk) {
-        this.slk = slk; }
+        this.slk = slk;
+    }
+
     Slk slk;
+
     @JsonProperty("dan")
     public Dan getDan() {
-        return this.dan; }
+        return this.dan;
+    }
+
     public void setDan(Dan dan) {
-        this.dan = dan; }
+        this.dan = dan;
+    }
+
     Dan dan;
+
     @JsonProperty("tir")
     public Tir getTir() {
-        return this.tir; }
+        return this.tir;
+    }
+
     public void setTir(Tir tir) {
-        this.tir = tir; }
+        this.tir = tir;
+    }
+
     Tir tir;
+
     @JsonProperty("ber")
     public Ber getBer() {
-        return this.ber; }
+        return this.ber;
+    }
+
     public void setBer(Ber ber) {
-        this.ber = ber; }
+        this.ber = ber;
+    }
+
     Ber ber;
+
     @JsonProperty("mey")
     public Mey getMey() {
-        return this.mey; }
+        return this.mey;
+    }
+
     public void setMey(Mey mey) {
-        this.mey = mey; }
+        this.mey = mey;
+    }
+
     Mey mey;
+
     @JsonProperty("est")
     public Est getEst() {
-        return this.est; }
+        return this.est;
+    }
+
     public void setEst(Est est) {
-        this.est = est; }
+        this.est = est;
+    }
+
     Est est;
+
     @JsonProperty("amh")
     public Amh getAmh() {
-        return this.amh; }
+        return this.amh;
+    }
+
     public void setAmh(Amh amh) {
-        this.amh = amh; }
+        this.amh = amh;
+    }
+
     Amh amh;
+
     @JsonProperty("fin")
     public Fin getFin() {
-        return this.fin; }
+        return this.fin;
+    }
+
     public void setFin(Fin fin) {
-        this.fin = fin; }
+        this.fin = fin;
+    }
+
     Fin fin;
+
     @JsonProperty("fij")
     public Fij getFij() {
-        return this.fij; }
+        return this.fij;
+    }
+
     public void setFij(Fij fij) {
-        this.fij = fij; }
+        this.fij = fij;
+    }
+
     Fij fij;
+
     @JsonProperty("hif")
     public Hif getHif() {
-        return this.hif; }
+        return this.hif;
+    }
+
     public void setHif(Hif hif) {
-        this.hif = hif; }
+        this.hif = hif;
+    }
+
     Hif hif;
+
     @JsonProperty("fao")
     public Fao getFao() {
-        return this.fao; }
+        return this.fao;
+    }
+
     public void setFao(Fao fao) {
-        this.fao = fao; }
+        this.fao = fao;
+    }
+
     Fao fao;
+
     @JsonProperty("kat")
     public Kat getKat() {
-        return this.kat; }
+        return this.kat;
+    }
+
     public void setKat(Kat kat) {
-        this.kat = kat; }
+        this.kat = kat;
+    }
+
     Kat kat;
+
     @JsonProperty("nfr")
     public Nfr getNfr() {
-        return this.nfr; }
+        return this.nfr;
+    }
+
     public void setNfr(Nfr nfr) {
-        this.nfr = nfr; }
+        this.nfr = nfr;
+    }
+
     Nfr nfr;
+
     @JsonProperty("pov")
     public Pov getPov() {
-        return this.pov; }
+        return this.pov;
+    }
+
     public void setPov(Pov pov) {
-        this.pov = pov; }
+        this.pov = pov;
+    }
+
     Pov pov;
+
     @JsonProperty("kal")
     public Kal getKal() {
-        return this.kal; }
+        return this.kal;
+    }
+
     public void setKal(Kal kal) {
-        this.kal = kal; }
+        this.kal = kal;
+    }
+
     Kal kal;
+
     @JsonProperty("cha")
     public Cha getCha() {
-        return this.cha; }
+        return this.cha;
+    }
+
     public void setCha(Cha cha) {
-        this.cha = cha; }
+        this.cha = cha;
+    }
+
     Cha cha;
+
     @JsonProperty("hat")
     public Hat getHat() {
-        return this.hat; }
+        return this.hat;
+    }
+
     public void setHat(Hat hat) {
-        this.hat = hat; }
+        this.hat = hat;
+    }
+
     Hat hat;
+
     @JsonProperty("hun")
     public Hun getHun() {
-        return this.hun; }
+        return this.hun;
+    }
+
     public void setHun(Hun hun) {
-        this.hun = hun; }
+        this.hun = hun;
+    }
+
     Hun hun;
+
     @JsonProperty("ind")
     public Ind getInd() {
-        return this.ind; }
+        return this.ind;
+    }
+
     public void setInd(Ind ind) {
-        this.ind = ind; }
+        this.ind = ind;
+    }
+
     Ind ind;
+
     @JsonProperty("glv")
     public Glv getGlv() {
-        return this.glv; }
+        return this.glv;
+    }
+
     public void setGlv(Glv glv) {
-        this.glv = glv; }
+        this.glv = glv;
+    }
+
     Glv glv;
+
     @JsonProperty("hin")
     public Hin getHin() {
-        return this.hin; }
+        return this.hin;
+    }
+
     public void setHin(Hin hin) {
-        this.hin = hin; }
+        this.hin = hin;
+    }
+
     Hin hin;
+
     @JsonProperty("tam")
     public Tam getTam() {
-        return this.tam; }
+        return this.tam;
+    }
+
     public void setTam(Tam tam) {
-        this.tam = tam; }
+        this.tam = tam;
+    }
+
     Tam tam;
+
     @JsonProperty("gle")
     public Gle getGle() {
-        return this.gle; }
+        return this.gle;
+    }
+
     public void setGle(Gle gle) {
-        this.gle = gle; }
+        this.gle = gle;
+    }
+
     Gle gle;
+
     @JsonProperty("fas")
     public Fas getFas() {
-        return this.fas; }
+        return this.fas;
+    }
+
     public void setFas(Fas fas) {
-        this.fas = fas; }
+        this.fas = fas;
+    }
+
     Fas fas;
+
     @JsonProperty("arc")
     public Arc getArc() {
-        return this.arc; }
+        return this.arc;
+    }
+
     public void setArc(Arc arc) {
-        this.arc = arc; }
+        this.arc = arc;
+    }
+
     Arc arc;
+
     @JsonProperty("ckb")
     public Ckb getCkb() {
-        return this.ckb; }
+        return this.ckb;
+    }
+
     public void setCkb(Ckb ckb) {
-        this.ckb = ckb; }
+        this.ckb = ckb;
+    }
+
     Ckb ckb;
+
     @JsonProperty("isl")
     public Isl getIsl() {
-        return this.isl; }
+        return this.isl;
+    }
+
     public void setIsl(Isl isl) {
-        this.isl = isl; }
+        this.isl = isl;
+    }
+
     Isl isl;
+
     @JsonProperty("heb")
     public Heb getHeb() {
-        return this.heb; }
+        return this.heb;
+    }
+
     public void setHeb(Heb heb) {
-        this.heb = heb; }
+        this.heb = heb;
+    }
+
     Heb heb;
+
     @JsonProperty("jam")
     public Jam getJam() {
-        return this.jam; }
+        return this.jam;
+    }
+
     public void setJam(Jam jam) {
-        this.jam = jam; }
+        this.jam = jam;
+    }
+
     Jam jam;
+
     @JsonProperty("nrf")
     public Nrf getNrf() {
-        return this.nrf; }
+        return this.nrf;
+    }
+
     public void setNrf(Nrf nrf) {
-        this.nrf = nrf; }
+        this.nrf = nrf;
+    }
+
     Nrf nrf;
+
     @JsonProperty("jpn")
     public Jpn getJpn() {
-        return this.jpn; }
+        return this.jpn;
+    }
+
     public void setJpn(Jpn jpn) {
-        this.jpn = jpn; }
+        this.jpn = jpn;
+    }
+
     Jpn jpn;
+
     @JsonProperty("kaz")
     public Kaz getKaz() {
-        return this.kaz; }
+        return this.kaz;
+    }
+
     public void setKaz(Kaz kaz) {
-        this.kaz = kaz; }
+        this.kaz = kaz;
+    }
+
     Kaz kaz;
+
     @JsonProperty("kir")
     public Kir getKir() {
-        return this.kir; }
+        return this.kir;
+    }
+
     public void setKir(Kir kir) {
-        this.kir = kir; }
+        this.kir = kir;
+    }
+
     Kir kir;
+
     @JsonProperty("khm")
     public Khm getKhm() {
-        return this.khm; }
+        return this.khm;
+    }
+
     public void setKhm(Khm khm) {
-        this.khm = khm; }
+        this.khm = khm;
+    }
+
     Khm khm;
+
     @JsonProperty("gil")
     public Gil getGil() {
-        return this.gil; }
+        return this.gil;
+    }
+
     public void setGil(Gil gil) {
-        this.gil = gil; }
+        this.gil = gil;
+    }
+
     Gil gil;
+
     @JsonProperty("kor")
     public Kor getKor() {
-        return this.kor; }
+        return this.kor;
+    }
+
     public void setKor(Kor kor) {
-        this.kor = kor; }
+        this.kor = kor;
+    }
+
     Kor kor;
+
     @JsonProperty("lao")
     public Lao getLao() {
-        return this.lao; }
+        return this.lao;
+    }
+
     public void setLao(Lao lao) {
-        this.lao = lao; }
+        this.lao = lao;
+    }
+
     Lao lao;
+
     @JsonProperty("sin")
     public Sin getSin() {
-        return this.sin; }
+        return this.sin;
+    }
+
     public void setSin(Sin sin) {
-        this.sin = sin; }
+        this.sin = sin;
+    }
+
     Sin sin;
+
     @JsonProperty("sot")
     public Sot getSot() {
-        return this.sot; }
+        return this.sot;
+    }
+
     public void setSot(Sot sot) {
-        this.sot = sot; }
+        this.sot = sot;
+    }
+
     Sot sot;
+
     @JsonProperty("lit")
     public Lit getLit() {
-        return this.lit; }
+        return this.lit;
+    }
+
     public void setLit(Lit lit) {
-        this.lit = lit; }
+        this.lit = lit;
+    }
+
     Lit lit;
+
     @JsonProperty("ltz")
     public Ltz getLtz() {
-        return this.ltz; }
+        return this.ltz;
+    }
+
     public void setLtz(Ltz ltz) {
-        this.ltz = ltz; }
+        this.ltz = ltz;
+    }
+
     Ltz ltz;
+
     @JsonProperty("lav")
     public Lav getLav() {
-        return this.lav; }
+        return this.lav;
+    }
+
     public void setLav(Lav lav) {
-        this.lav = lav; }
+        this.lav = lav;
+    }
+
     Lav lav;
+
     @JsonProperty("ron")
     public Ron getRon() {
-        return this.ron; }
+        return this.ron;
+    }
+
     public void setRon(Ron ron) {
-        this.ron = ron; }
+        this.ron = ron;
+    }
+
     Ron ron;
+
     @JsonProperty("mlg")
     public Mlg getMlg() {
-        return this.mlg; }
+        return this.mlg;
+    }
+
     public void setMlg(Mlg mlg) {
-        this.mlg = mlg; }
+        this.mlg = mlg;
+    }
+
     Mlg mlg;
+
     @JsonProperty("div")
     public Div getDiv() {
-        return this.div; }
+        return this.div;
+    }
+
     public void setDiv(Div div) {
-        this.div = div; }
+        this.div = div;
+    }
+
     Div div;
+
     @JsonProperty("mah")
     public Mah getMah() {
-        return this.mah; }
+        return this.mah;
+    }
+
     public void setMah(Mah mah) {
-        this.mah = mah; }
+        this.mah = mah;
+    }
+
     Mah mah;
+
     @JsonProperty("mkd")
     public Mkd getMkd() {
-        return this.mkd; }
+        return this.mkd;
+    }
+
     public void setMkd(Mkd mkd) {
-        this.mkd = mkd; }
+        this.mkd = mkd;
+    }
+
     Mkd mkd;
+
     @JsonProperty("mlt")
     public Mlt getMlt() {
-        return this.mlt; }
+        return this.mlt;
+    }
+
     public void setMlt(Mlt mlt) {
-        this.mlt = mlt; }
+        this.mlt = mlt;
+    }
+
     Mlt mlt;
+
     @JsonProperty("mya")
     public Mya getMya() {
-        return this.mya; }
+        return this.mya;
+    }
+
     public void setMya(Mya mya) {
-        this.mya = mya; }
+        this.mya = mya;
+    }
+
     Mya mya;
+
     @JsonProperty("cnr")
     public Cnr getCnr() {
-        return this.cnr; }
+        return this.cnr;
+    }
+
     public void setCnr(Cnr cnr) {
-        this.cnr = cnr; }
+        this.cnr = cnr;
+    }
+
     Cnr cnr;
+
     @JsonProperty("mon")
     public Mon getMon() {
-        return this.mon; }
+        return this.mon;
+    }
+
     public void setMon(Mon mon) {
-        this.mon = mon; }
+        this.mon = mon;
+    }
+
     Mon mon;
+
     @JsonProperty("cal")
     public Cal getCal() {
-        return this.cal; }
+        return this.cal;
+    }
+
     public void setCal(Cal cal) {
-        this.cal = cal; }
+        this.cal = cal;
+    }
+
     Cal cal;
+
     @JsonProperty("mfe")
     public Mfe getMfe() {
-        return this.mfe; }
+        return this.mfe;
+    }
+
     public void setMfe(Mfe mfe) {
-        this.mfe = mfe; }
+        this.mfe = mfe;
+    }
+
     Mfe mfe;
+
     @JsonProperty("nya")
     public Nya getNya() {
-        return this.nya; }
+        return this.nya;
+    }
+
     public void setNya(Nya nya) {
-        this.nya = nya; }
+        this.nya = nya;
+    }
+
     Nya nya;
+
     @JsonProperty("afr")
     public Afr getAfr() {
-        return this.afr; }
+        return this.afr;
+    }
+
     public void setAfr(Afr afr) {
-        this.afr = afr; }
+        this.afr = afr;
+    }
+
     Afr afr;
+
     @JsonProperty("her")
     public Her getHer() {
-        return this.her; }
+        return this.her;
+    }
+
     public void setHer(Her her) {
-        this.her = her; }
+        this.her = her;
+    }
+
     Her her;
+
     @JsonProperty("hgm")
     public Hgm getHgm() {
-        return this.hgm; }
+        return this.hgm;
+    }
+
     public void setHgm(Hgm hgm) {
-        this.hgm = hgm; }
+        this.hgm = hgm;
+    }
+
     Hgm hgm;
+
     @JsonProperty("kwn")
     public Kwn getKwn() {
-        return this.kwn; }
+        return this.kwn;
+    }
+
     public void setKwn(Kwn kwn) {
-        this.kwn = kwn; }
+        this.kwn = kwn;
+    }
+
     Kwn kwn;
+
     @JsonProperty("loz")
     public Loz getLoz() {
-        return this.loz; }
+        return this.loz;
+    }
+
     public void setLoz(Loz loz) {
-        this.loz = loz; }
+        this.loz = loz;
+    }
+
     Loz loz;
+
     @JsonProperty("ndo")
     public Ndo getNdo() {
-        return this.ndo; }
+        return this.ndo;
+    }
+
     public void setNdo(Ndo ndo) {
-        this.ndo = ndo; }
+        this.ndo = ndo;
+    }
+
     Ndo ndo;
+
     @JsonProperty("pih")
     public Pih getPih() {
-        return this.pih; }
+        return this.pih;
+    }
+
     public void setPih(Pih pih) {
-        this.pih = pih; }
+        this.pih = pih;
+    }
+
     Pih pih;
+
     @JsonProperty("niu")
     public Niu getNiu() {
-        return this.niu; }
+        return this.niu;
+    }
+
     public void setNiu(Niu niu) {
-        this.niu = niu; }
+        this.niu = niu;
+    }
+
     Niu niu;
+
     @JsonProperty("nno")
     public Nno getNno() {
-        return this.nno; }
+        return this.nno;
+    }
+
     public void setNno(Nno nno) {
-        this.nno = nno; }
+        this.nno = nno;
+    }
+
     Nno nno;
+
     @JsonProperty("nob")
     public Nob getNob() {
-        return this.nob; }
+        return this.nob;
+    }
+
     public void setNob(Nob nob) {
-        this.nob = nob; }
+        this.nob = nob;
+    }
+
     Nob nob;
+
     @JsonProperty("smi")
     public Smi getSmi() {
-        return this.smi; }
+        return this.smi;
+    }
+
     public void setSmi(Smi smi) {
-        this.smi = smi; }
+        this.smi = smi;
+    }
+
     Smi smi;
+
     @JsonProperty("nep")
     public Nep getNep() {
-        return this.nep; }
+        return this.nep;
+    }
+
     public void setNep(Nep nep) {
-        this.nep = nep; }
+        this.nep = nep;
+    }
+
     Nep nep;
+
     @JsonProperty("nau")
     public Nau getNau() {
-        return this.nau; }
+        return this.nau;
+    }
+
     public void setNau(Nau nau) {
-        this.nau = nau; }
+        this.nau = nau;
+    }
+
     Nau nau;
+
     @JsonProperty("mri")
     public Mri getMri() {
-        return this.mri; }
+        return this.mri;
+    }
+
     public void setMri(Mri mri) {
-        this.mri = mri; }
+        this.mri = mri;
+    }
+
     Mri mri;
+
     @JsonProperty("nzs")
     public Nzs getNzs() {
-        return this.nzs; }
+        return this.nzs;
+    }
+
     public void setNzs(Nzs nzs) {
-        this.nzs = nzs; }
+        this.nzs = nzs;
+    }
+
     Nzs nzs;
+
     @JsonProperty("urd")
     public Urd getUrd() {
-        return this.urd; }
+        return this.urd;
+    }
+
     public void setUrd(Urd urd) {
-        this.urd = urd; }
+        this.urd = urd;
+    }
+
     Urd urd;
+
     @JsonProperty("fil")
     public Fil getFil() {
-        return this.fil; }
+        return this.fil;
+    }
+
     public void setFil(Fil fil) {
-        this.fil = fil; }
+        this.fil = fil;
+    }
+
     Fil fil;
+
     @JsonProperty("pau")
     public Pau getPau() {
-        return this.pau; }
+        return this.pau;
+    }
+
     public void setPau(Pau pau) {
-        this.pau = pau; }
+        this.pau = pau;
+    }
+
     Pau pau;
+
     @JsonProperty("hmo")
     public Hmo getHmo() {
-        return this.hmo; }
+        return this.hmo;
+    }
+
     public void setHmo(Hmo hmo) {
-        this.hmo = hmo; }
+        this.hmo = hmo;
+    }
+
     Hmo hmo;
+
     @JsonProperty("tpi")
     public Tpi getTpi() {
-        return this.tpi; }
+        return this.tpi;
+    }
+
     public void setTpi(Tpi tpi) {
-        this.tpi = tpi; }
+        this.tpi = tpi;
+    }
+
     Tpi tpi;
+
     @JsonProperty("pol")
     public Pol getPol() {
-        return this.pol; }
+        return this.pol;
+    }
+
     public void setPol(Pol pol) {
-        this.pol = pol; }
+        this.pol = pol;
+    }
+
     Pol pol;
+
     @JsonProperty("kin")
     public Kin getKin() {
-        return this.kin; }
+        return this.kin;
+    }
+
     public void setKin(Kin kin) {
-        this.kin = kin; }
+        this.kin = kin;
+    }
+
     Kin kin;
+
     @JsonProperty("som")
     public Som getSom() {
-        return this.som; }
+        return this.som;
+    }
+
     public void setSom(Som som) {
-        this.som = som; }
+        this.som = som;
+    }
+
     Som som;
+
     @JsonProperty("slv")
     public Slv getSlv() {
-        return this.slv; }
+        return this.slv;
+    }
+
     public void setSlv(Slv slv) {
-        this.slv = slv; }
+        this.slv = slv;
+    }
+
     Slv slv;
+
     @JsonProperty("ssw")
     public Ssw getSsw() {
-        return this.ssw; }
+        return this.ssw;
+    }
+
     public void setSsw(Ssw ssw) {
-        this.ssw = ssw; }
+        this.ssw = ssw;
+    }
+
     Ssw ssw;
+
     @JsonProperty("crs")
     public Crs getCrs() {
-        return this.crs; }
+        return this.crs;
+    }
+
     public void setCrs(Crs crs) {
-        this.crs = crs; }
+        this.crs = crs;
+    }
+
     Crs crs;
+
     @JsonProperty("tha")
     public Tha getTha() {
-        return this.tha; }
+        return this.tha;
+    }
+
     public void setTha(Tha tha) {
-        this.tha = tha; }
+        this.tha = tha;
+    }
+
     Tha tha;
+
     @JsonProperty("tgk")
     public Tgk getTgk() {
-        return this.tgk; }
+        return this.tgk;
+    }
+
     public void setTgk(Tgk tgk) {
-        this.tgk = tgk; }
+        this.tgk = tgk;
+    }
+
     Tgk tgk;
+
     @JsonProperty("tkl")
     public Tkl getTkl() {
-        return this.tkl; }
+        return this.tkl;
+    }
+
     public void setTkl(Tkl tkl) {
-        this.tkl = tkl; }
+        this.tkl = tkl;
+    }
+
     Tkl tkl;
+
     @JsonProperty("tet")
     public Tet getTet() {
-        return this.tet; }
+        return this.tet;
+    }
+
     public void setTet(Tet tet) {
-        this.tet = tet; }
+        this.tet = tet;
+    }
+
     Tet tet;
+
     @JsonProperty("ton")
     public Ton getTon() {
-        return this.ton; }
+        return this.ton;
+    }
+
     public void setTon(Ton ton) {
-        this.ton = ton; }
+        this.ton = ton;
+    }
+
     Ton ton;
+
     @JsonProperty("tvl")
     public Tvl getTvl() {
-        return this.tvl; }
+        return this.tvl;
+    }
+
     public void setTvl(Tvl tvl) {
-        this.tvl = tvl; }
+        this.tvl = tvl;
+    }
+
     Tvl tvl;
+
     @JsonProperty("ukr")
     public Ukr getUkr() {
-        return this.ukr; }
+        return this.ukr;
+    }
+
     public void setUkr(Ukr ukr) {
-        this.ukr = ukr; }
+        this.ukr = ukr;
+    }
+
     Ukr ukr;
+
     @JsonProperty("uzb")
     public Uzb getUzb() {
-        return this.uzb; }
+        return this.uzb;
+    }
+
     public void setUzb(Uzb uzb) {
-        this.uzb = uzb; }
+        this.uzb = uzb;
+    }
+
     Uzb uzb;
+
     @JsonProperty("lat")
     public Lat getLat() {
-        return this.lat; }
+        return this.lat;
+    }
+
     public void setLat(Lat lat) {
-        this.lat = lat; }
+        this.lat = lat;
+    }
+
     Lat lat;
+
     @JsonProperty("vie")
     public Vie getVie() {
-        return this.vie; }
+        return this.vie;
+    }
+
     public void setVie(Vie vie) {
-        this.vie = vie; }
+        this.vie = vie;
+    }
+
     Vie vie;
+
     @JsonProperty("bis")
     public Bis getBis() {
-        return this.bis; }
+        return this.bis;
+    }
+
     public void setBis(Bis bis) {
-        this.bis = bis; }
+        this.bis = bis;
+    }
+
     Bis bis;
+
     @JsonProperty("nbl")
     public Nbl getNbl() {
-        return this.nbl; }
+        return this.nbl;
+    }
+
     public void setNbl(Nbl nbl) {
-        this.nbl = nbl; }
+        this.nbl = nbl;
+    }
+
     Nbl nbl;
+
     @JsonProperty("nso")
     public Nso getNso() {
-        return this.nso; }
+        return this.nso;
+    }
+
     public void setNso(Nso nso) {
-        this.nso = nso; }
+        this.nso = nso;
+    }
+
     Nso nso;
+
     @JsonProperty("tso")
     public Tso getTso() {
-        return this.tso; }
+        return this.tso;
+    }
+
     public void setTso(Tso tso) {
-        this.tso = tso; }
+        this.tso = tso;
+    }
+
     Tso tso;
+
     @JsonProperty("ven")
     public Ven getVen() {
-        return this.ven; }
+        return this.ven;
+    }
+
     public void setVen(Ven ven) {
-        this.ven = ven; }
+        this.ven = ven;
+    }
+
     Ven ven;
+
     @JsonProperty("xho")
     public Xho getXho() {
-        return this.xho; }
+        return this.xho;
+    }
+
     public void setXho(Xho xho) {
-        this.xho = xho; }
+        this.xho = xho;
+    }
+
     Xho xho;
+
     @JsonProperty("zul")
     public Zul getZul() {
-        return this.zul; }
+        return this.zul;
+    }
+
     public void setZul(Zul zul) {
-        this.zul = zul; }
+        this.zul = zul;
+    }
+
     Zul zul;
+
     @JsonProperty("bwg")
     public Bwg getBwg() {
-        return this.bwg; }
+        return this.bwg;
+    }
+
     public void setBwg(Bwg bwg) {
-        this.bwg = bwg; }
+        this.bwg = bwg;
+    }
+
     Bwg bwg;
+
     @JsonProperty("kck")
     public Kck getKck() {
-        return this.kck; }
+        return this.kck;
+    }
+
     public void setKck(Kck kck) {
-        this.kck = kck; }
+        this.kck = kck;
+    }
+
     Kck kck;
+
     @JsonProperty("khi")
     public Khi getKhi() {
-        return this.khi; }
+        return this.khi;
+    }
+
     public void setKhi(Khi khi) {
-        this.khi = khi; }
+        this.khi = khi;
+    }
+
     Khi khi;
+
     @JsonProperty("ndc")
     public Ndc getNdc() {
-        return this.ndc; }
+        return this.ndc;
+    }
+
     public void setNdc(Ndc ndc) {
-        this.ndc = ndc; }
+        this.ndc = ndc;
+    }
+
     Ndc ndc;
+
     @JsonProperty("nde")
     public Nde getNde() {
-        return this.nde; }
+        return this.nde;
+    }
+
     public void setNde(Nde nde) {
-        this.nde = nde; }
+        this.nde = nde;
+    }
+
     Nde nde;
+
     @JsonProperty("sna")
     public Sna getSna() {
-        return this.sna; }
+        return this.sna;
+    }
+
     public void setSna(Sna sna) {
-        this.sna = sna; }
+        this.sna = sna;
+    }
+
     Sna sna;
+
     @JsonProperty("toi")
     public Toi getToi() {
-        return this.toi; }
+        return this.toi;
+    }
+
     public void setToi(Toi toi) {
-        this.toi = toi; }
+        this.toi = toi;
+    }
+
     Toi toi;
+
     @JsonProperty("zib")
     public Zib getZib() {
-        return this.zib; }
+        return this.zib;
+    }
+
     public void setZib(Zib zib) {
-        this.zib = zib; }
+        this.zib = zib;
+    }
+
     Zib zib;
 }
 
-class AWG{
+class AWG {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class AFN{
+class AFN {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class AOA{
+class AOA {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class XCD{
+class XCD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class EUR{
+class EUR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class ALL{
+class ALL {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class AED{
+class AED {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class ARS{
+class ARS {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class AMD{
+class AMD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class USD{
+class USD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class AUD{
+class AUD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class AZN{
+class AZN {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BIF{
+class BIF {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class XOF{
+class XOF {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BDT{
+class BDT {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BGN{
+class BGN {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BHD{
+class BHD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BSD{
+class BSD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BAM{
+class BAM {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class GBP{
+class GBP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class SHP{
+class SHP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BYN{
+class BYN {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BZD{
+class BZD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BMD{
+class BMD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BOB{
+class BOB {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BRL{
+class BRL {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BBD{
+class BBD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BND{
+class BND {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class SGD{
+class SGD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BTN{
+class BTN {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class INR{
+class INR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class BWP{
+class BWP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class XAF{
+class XAF {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class CAD{
+class CAD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class CHF{
+class CHF {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class CLP{
+class CLP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class CNY{
+class CNY {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class CDF{
+class CDF {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class CKD{
+class CKD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class NZD{
+class NZD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class COP{
+class COP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class KMF{
+class KMF {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class CVE{
+class CVE {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class CRC{
+class CRC {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class CUC{
+class CUC {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class CUP{
+class CUP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class ANG{
+class ANG {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class KYD{
+class KYD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class CZK{
+class CZK {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class DJF{
+class DJF {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class DKK{
+class DKK {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class DOP{
+class DOP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class DZD{
+class DZD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class EGP{
+class EGP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class ERN{
+class ERN {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class MAD{
+class MAD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class MRU{
+class MRU {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class ETB{
+class ETB {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class FJD{
+class FJD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class FKP{
+class FKP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class FOK{
+class FOK {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class GEL{
+class GEL {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class GGP{
+class GGP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class GHS{
+class GHS {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class GIP{
+class GIP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class GNF{
+class GNF {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class GMD{
+class GMD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class GTQ{
+class GTQ {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class GYD{
+class GYD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class HKD{
+class HKD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class HNL{
+class HNL {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class HRK{
+class HRK {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class HTG{
+class HTG {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class HUF{
+class HUF {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class IDR{
+class IDR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class IMP{
+class IMP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class IRR{
+class IRR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class IQD{
+class IQD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class ISK{
+class ISK {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class ILS{
+class ILS {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class JMD{
+class JMD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class JEP{
+class JEP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class JOD{
+class JOD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class JPY{
+class JPY {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class KZT{
+class KZT {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class KES{
+class KES {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class KGS{
+class KGS {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class KHR{
+class KHR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class KID{
+class KID {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class KRW{
+class KRW {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class KWD{
+class KWD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class LAK{
+class LAK {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class LBP{
+class LBP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class LRD{
+class LRD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class LYD{
+class LYD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class LKR{
+class LKR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class LSL{
+class LSL {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class ZAR{
+class ZAR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class MOP{
+class MOP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class MDL{
+class MDL {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class MGA{
+class MGA {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class MVR{
+class MVR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class MXN{
+class MXN {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
 class MKD2 {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class MMK{
+class MMK {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class MNT{
+class MNT {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class MZN{
+class MZN {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class MUR{
+class MUR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class MWK{
+class MWK {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class MYR{
+class MYR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class NAD{
+class NAD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class XPF{
+class XPF {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class NGN{
+class NGN {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class NIO{
+class NIO {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class NOK{
+class NOK {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class NPR{
+class NPR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class OMR{
+class OMR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class PKR{
+class PKR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class PAB{
+class PAB {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class PEN{
+class PEN {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class PHP{
+class PHP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class PGK{
+class PGK {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class PLN{
+class PLN {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class KPW{
+class KPW {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class PYG{
+class PYG {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class QAR{
+class QAR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
 class RON2 {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class RUB{
+class RUB {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class RWF{
+class RWF {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class SAR{
+class SAR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class SDG{
+class SDG {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class SBD{
+class SBD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class SLL{
+class SLL {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class SOS{
+class SOS {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class RSD{
+class RSD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class SSP{
+class SSP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class STN{
+class STN {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class SRD{
+class SRD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class SEK{
+class SEK {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class SZL{
+class SZL {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class SCR{
+class SCR {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class SYP{
+class SYP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class THB{
+class THB {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class TJS{
+class TJS {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class TMT{
+class TMT {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class TOP{
+class TOP {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class TTD{
+class TTD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class TND{
+class TND {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class TRY{
+class TRY {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class TVD{
+class TVD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class TWD{
+class TWD {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class TZS{
+class TZS {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class UGX{
+class UGX {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class UAH{
+class UAH {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class UYU{
+class UYU {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class UZS{
+class UZS {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class VES{
+class VES {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class VND{
+class VND {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class VUV{
+class VUV {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class WST{
+class WST {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class YER{
+class YER {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class ZMW{
+class ZMW {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class ZWB{
+class ZWB {
     @JsonProperty("name")
     public String getName() {
-        return this.name; }
+        return this.name;
+    }
+
     public void setName(String name) {
-        this.name = name; }
+        this.name = name;
+    }
+
     String name;
+
     @JsonProperty("symbol")
     public String getSymbol() {
-        return this.symbol; }
+        return this.symbol;
+    }
+
     public void setSymbol(String symbol) {
-        this.symbol = symbol; }
+        this.symbol = symbol;
+    }
+
     String symbol;
 }
 
-class Per{
+class Per {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
-class Cym{
+class Cym {
     @JsonProperty("official")
     public String getOfficial() {
-        return this.official; }
+        return this.official;
+    }
+
     public void setOfficial(String official) {
-        this.official = official; }
+        this.official = official;
+    }
+
     String official;
+
     @JsonProperty("common")
     public String getCommon() {
-        return this.common; }
+        return this.common;
+    }
+
     public void setCommon(String common) {
-        this.common = common; }
+        this.common = common;
+    }
+
     String common;
 }
 
